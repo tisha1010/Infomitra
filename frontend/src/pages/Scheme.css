@@ -1,0 +1,377 @@
+/* Scheme Container */
+.scheme-container {
+ min-height: 100vh;
+ background-color: #f5f7fa;
+}
+
+/* Hero Section */
+.scheme-hero {
+ background: linear-gradient(135deg, #4d43dc 0%, #00BFFF 100%);
+ color: white;
+ padding: 50px 20px;
+ border-radius: 20px;
+ text-align: center;
+ position: relative;
+}
+
+.scheme-hero-title {
+ font-size: 3rem;
+ font-weight: 900;
+ margin-bottom: 1rem;
+ line-height: 1.2;
+}
+
+.scheme-hero-subtitle {
+ font-size: 1.25rem;
+ opacity: 0.95;
+ max-width: 50rem;
+ margin: 0 auto;
+}
+
+.back-btn {
+ position: absolute;
+ top: 2rem;
+ left: 2rem;
+ background: rgba(255, 255, 255, 0.2);
+ border: 2px solid white;
+ color: white;
+ padding: 0.75rem 1.5rem;
+ border-radius: 0.75rem;
+ font-weight: 600;
+ cursor: pointer;
+ display: flex;
+ align-items: center;
+ gap: 0.5rem;
+ transition: all 0.3s;
+}
+
+.back-btn:hover {
+ background: white;
+ color: #1e3a8a;
+}
+
+/* Categories Section */
+.categories-section {
+ padding: 4rem 0;
+}
+
+.categories-grid {
+ display: grid;
+ grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+ gap: 2rem;
+ max-width: 50rem;
+ margin: 0 auto;
+}
+
+.category-card {
+ background: white;
+ border-radius: 1.5rem;
+ padding: 2rem;
+ box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+ border-top: 4px solid;
+ cursor: pointer;
+ transition: all 0.3s ease;
+ text-align: center;
+}
+
+.category-card:hover {
+ transform: translateY(-8px);
+ box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15);
+}
+
+.category-icon {
+ width: 5rem;
+ height: 5rem;
+ border-radius: 50%;
+ display: flex;
+ align-items: center;
+ justify-content: center;
+ margin: 0 auto 1.5rem;
+}
+
+.category-title {
+ font-size: 1.5rem;
+ font-weight: 700;
+ margin-bottom: 1rem;
+}
+
+.category-description {
+ color: #6b7280;
+ margin-bottom: 1.5rem;
+ line-height: 1.6;
+}
+
+.category-count {
+ display: inline-block;
+ padding: 0.5rem 1rem;
+ background: #f3f4f6;
+ border-radius: 9999px;
+ font-size: 0.875rem;
+ font-weight: 600;
+ color: #374151;
+ margin-bottom: 1.5rem;
+}
+
+.category-btn {
+ width: 100%;
+ padding: 0.875rem 1.5rem;
+ color: white;
+ border: none;
+ border-radius: 0.75rem;
+ font-weight: 600;
+ cursor: pointer;
+ transition: all 0.3s;
+}
+
+.category-btn:hover {
+ transform: translateY(-2px);
+ box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+/* Search Section */
+.search-section {
+ background: white;
+ padding: 2rem 0;
+ border-bottom: 1px solid #e5e7eb;
+ position: sticky;
+ top: 0;
+ z-index: 10;
+ box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+.search-box {
+ max-width: 40rem;
+ margin: 0 auto;
+ position: relative;
+}
+
+.search-icon {
+ position: absolute;
+ left: 1rem;
+ top: 50%;
+ transform: translateY(-50%);
+ color: #6b7280;
+}
+
+.search-input {
+ width: 100%;
+ padding: 0.875rem 1rem 0.875rem 3rem;
+ border: 2px solid #e5e7eb;
+ border-radius: 0.75rem;
+ font-size: 1rem;
+ transition: all 0.3s;
+}
+
+.search-input:focus {
+ outline: none;
+ border-color: #2563eb;
+ box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.1);
+}
+
+/* Schemes List Section */
+.schemes-list-section {
+ padding: 3rem 0;
+}
+
+.schemes-count {
+ text-align: center;
+ color: #6b7280;
+ font-size: 0.875rem;
+ margin-bottom: 2rem;
+ font-weight: 600;
+}
+
+.schemes-list {
+ max-width: 60rem;
+ margin: 0 auto;
+ display: flex;
+ flex-direction: column;
+ gap: 1.5rem;
+}
+
+.scheme-card {
+ background: white;
+ border-radius: 1rem;
+ padding: 1.5rem;
+ box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+ cursor: pointer;
+ transition: all 0.3s ease;
+ border-left: 4px solid #3b82f6;
+}
+
+.scheme-card:hover {
+ box-shadow: 0 4px 16px rgba(0, 0, 0, 0.12);
+ transform: translateX(4px);
+}
+
+.scheme-card.expanded {
+ box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+}
+
+.scheme-header {
+ display: flex;
+ justify-content: space-between;
+ align-items: flex-start;
+ margin-bottom: 0.75rem;
+}
+
+.scheme-title {
+ font-size: 1.125rem;
+ font-weight: 700;
+ color: #1e40af;
+ margin: 0;
+ flex: 1;
+ padding-right: 1rem;
+}
+
+.expand-icon {
+ font-size: 1.5rem;
+ font-weight: 300;
+ color: #6b7280;
+ width: 2rem;
+ height: 2rem;
+ display: flex;
+ align-items: center;
+ justify-content: center;
+ background: #f3f4f6;
+ border-radius: 50%;
+ flex-shrink: 0;
+}
+
+.scheme-description {
+ font-size: 0.875rem;
+ color: #475569;
+ line-height: 1.6;
+ margin: 0;
+}
+
+.scheme-details {
+ margin-top: 1.5rem;
+ padding-top: 1.5rem;
+ border-top: 2px solid #f3f4f6;
+ animation: slideDown 0.3s ease-out;
+}
+
+@keyframes slideDown {
+ from {
+ opacity: 0;
+ transform: translateY(-10px);
+ }
+ to {
+ opacity: 1;
+ transform: translateY(0);
+ }
+}
+
+.benefits-section h4 {
+ font-size: 1rem;
+ font-weight: 700;
+ color: #1f2937;
+ margin-bottom: 0.75rem;
+}
+
+.benefits-section ul {
+ list-style: none;
+ padding: 0;
+ margin: 0 0 1.5rem 0;
+}
+
+.benefits-section li {
+ padding: 0.5rem 0 0.5rem 1.5rem;
+ position: relative;
+ color: #374151;
+ font-size: 0.875rem;
+ line-height: 1.6;
+}
+
+.benefits-section li:before {
+ content: "✓";
+ position: absolute;
+ left: 0;
+ color: #10b981;
+ font-weight: bold;
+}
+
+.apply-btn {
+ width: 100%;
+ padding: 0.875rem 1.5rem;
+ color: white;
+ border: none;
+ border-radius: 0.75rem;
+ font-weight: 600;
+ cursor: pointer;
+ transition: all 0.3s;
+}
+
+.apply-btn:hover {
+ transform: translateY(-2px);
+ box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+/* Container */
+.container {
+ max-width: 80rem;
+ margin: 0 auto;
+ padding: 0 1rem;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+ .scheme-hero-title {
+ font-size: 2rem;
+ }
+
+ .scheme-hero-subtitle {
+ font-size: 1rem;
+ }
+
+ .back-btn {
+ position: relative;
+ top: auto;
+ left: auto;
+ margin-bottom: 1.5rem;
+ }
+
+ .categories-grid {
+ grid-template-columns: 1fr;
+ }
+
+ .category-card {
+ padding: 1.5rem;
+ }
+
+ .schemes-list {
+ padding: 0 0.5rem;
+ }
+
+ .scheme-card {
+ padding: 1rem;
+ }
+
+ .scheme-title {
+ font-size: 1rem;
+ }
+}
+
+@media (max-width: 480px) {
+ .scheme-hero {
+ padding: 2rem 0;
+ }
+
+ .scheme-hero-title {
+ font-size: 1.75rem;
+ }
+
+ .categories-section {
+ padding: 2rem 0;
+ }
+
+ .category-icon {
+ width: 4rem;
+ height: 4rem;
+ }
+
+ .category-icon span {
+ font-size: 2rem !important;
+ }
+}

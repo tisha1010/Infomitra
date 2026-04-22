@@ -1,0 +1,30 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  background-color: #1e3a8a;
+  color: white;
+}
+
+.auth-section {
+  display: flex;
+  align-items: center;
+}
+
+.login-btn, .profile-icon {
+  padding: 0.5rem 1rem;
+  background-color: #1e40af;
+  color: white;
+  text-decoration: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.profile-icon:hover, .login-btn:hover {
+  background-color: #1e3a8a;
+}
+
+.profile-icon span {
+  margin-left: 0.5rem;
+}
